@@ -12,7 +12,7 @@ const Footer =() => (
     <nav className="footer">
 
         <Link to="/movies/popular">popular</Link>
-        <Link to="/movies/top">top rated</Link>
+        <Link to="/movies/top_rated">top rated</Link>
         <Link to="/movies/upcoming">upcoming</Link>
 
     </nav>

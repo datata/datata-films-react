@@ -6,7 +6,7 @@ class MovieDetails extends Component {
   render() {
     return (
       <section>
-          MovieDetails
+        
       </section>
 
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Router} from '@reach/router';
+import {Router, Redirect} from '@reach/router';
 
 import './App.scss';
 
@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 //importamos views
 import MovieDetails from './views/MovieDetails';
 import MovieList from './views/MovieList';
+import NotFound from './components/NotFound';
 
 
 
@@ -22,11 +23,11 @@ class App extends Component {
       <Navigation />
       <Router className="main">
 
-
       <MovieList path = "/movies/:type" />
       <MovieDetails path = "/movie/:id"/>
-
-            
+      <Redirect default from ="*" to="movies/popular" noThrow/>
+      <NotFound path="notFound"/>
+                  
       </Router>  
       <Footer/>
 
